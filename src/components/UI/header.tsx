@@ -1,17 +1,26 @@
-import Image from "next/image"
-
-const header = () => {
+export default function GlassNavbar() {
   return (
-    <div className="flex flex-row justify-between px-5 w-screen py-5 bg-amber-600 text-amber-50">
-        <Image src="/images/logo1.png" alt="logo" width={70} loading="eager" height={70} />
-        <div className=" flex flex-row justify-between align-middle w-80">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Product</a>
+    <div className="w-full flex justify-center mt-6 px-4">
+      <nav className="backdrop-blur-xl bg-white/5 border border-white/10 
+                      rounded-full px-8 py-3 flex items-center justify-between 
+                      w-full max-w-5xl shadow-lg">
+        
+        {/* Left */}
+        <div className="flex items-center gap-3">
+          {/* Logo placeholder */}
+          <span className="text-white font-medium text-lg">LuminaFlare</span>
         </div>
-        <button>Contact Us</button>
-    </div>
-  )
-}
 
-export default header
+        {/* Right */}
+        <div className="flex items-center gap-6">
+          <a className="text-white/80 hover:text-white font-medium" href="#">
+            Home
+          </a>
+          <a className="text-white/80 hover:text-white font-medium" href="#">
+            Docs
+          </a>
+        </div>
+      </nav>
+    </div>
+  );
+}

@@ -2,10 +2,12 @@ import { Button } from "@mui/material"
 
 export default function hero() {
   return (
-    <div className="w-3xl h-5xl flex-col justify-between align-middle">
-        <h1 className="text-5xl font-bold">Discover the Finest Meat here with us</h1>
-        <p className="text-2xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, numquam tempore reprehenderit nobis sapiente repudiandae eaque debitis ullam reiciendis veniam accusantium odio cumque facere saepe eius expedita iusto facilis minus.</p>
-      <Button sx={{ backgroundColor: '#E17100', color: 'white' }}variant="outlined">Outlined</Button>
+    <div className=" w-screen flex flex-row justify-center align-middle mt-50">
+      <div className="text-amber-50 w-3xl flex-col justify-center text-center" >
+          <h1 className="text-4xl font-bold mb-5">Discover the Finest Meat</h1>
+          <p className="text-1xl mb-5">tempore reprehendedita iusto facilis minus.</p>
+        <Button sx={{ backgroundColor: 'transparent',  border: '1px solid white', color: 'white' }}variant="outlined">Browse Our LiveStock</Button>
+      </div>
     </div>
   )
 }

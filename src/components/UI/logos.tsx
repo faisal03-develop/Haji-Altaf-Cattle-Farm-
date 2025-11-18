@@ -28,7 +28,7 @@ export default function logos() {
         hoverSpeed={0}
         scaleOnHover
         fadeOut
-        fadeOutColor="#ffffff"
+        fadeOutColor="black"
         ariaLabel="Technology partners"
       />
       
