@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "eslint"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.5",
     "@mui/material": "^7.3.5",
+    "@next/font": "^14.2.15",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.554.0",
